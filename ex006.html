@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,56 +8,57 @@
     <title>Eventos Dom</title>
 
     <style>
-         div#area {
-               font: normal 15pt arial;
-               background-color: green;
-               color: white;
-               width: 300px;
-               height: 300px;
-               line-height: 300px;
-               text-align: center;
-         }
-
-         
+        div#area {
+            font: normal 15pt arial;
+            background-color: green;
+            color: white;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+            align-items: center;
+              
+        }
+        
     </style>
 
 </head>
 
 <body>
-    
-     <center>
-    <div id= "area"  >
-            interaja . . . 
+
+     
+    <div id="area">
+        interaja . . .
     </div>
-     </center> 
-     <div id="google_translate_element"></div>
+
+    <div id="google_translate_element"></div>
 
     <script>
-        var a= window.document.getElementById('area')
-            a.addEventListener('click', clicar)
-            a.addEventListener('mouseenter', entrar)
-            a.addEventListener('mouseout', sair  )
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
 
-          function clicar () {
-              a.innerText="Clicou!"
-              a.style.background ='red'
-          }
+        function clicar() {
+            a.innerText = "Clicou!"
+            a.style.background = 'red'
+        }
 
-          function entrar () {
-              a.innerText="Entrou!"
-              a.style.background='blue'
-          }
+        function entrar() {
+            a.innerText = "Entrou!"
+            a.style.background = 'blue'
+        }
 
-          function sair () {
-              a.innerText="Saiu!"
-              a.style.background="black"
-          }
+        function sair() {
+            a.innerText = "Saiu!"
+            a.style.background = "black"
+        }
     </script>
-    
+
     <script>
-        src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"; type="text/javascript"
+        src = "http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"; type = "text/javascript"
     </script>
 
-    </body>
-      
+</body>
+
 </html>
